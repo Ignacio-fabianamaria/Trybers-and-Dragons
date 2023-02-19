@@ -1,11 +1,11 @@
-import { EnergyType } from '../Energy';
+import Energy from '../Energy';
 
 export interface Fighter {
   // atributos
   lifePoints: number;
   strength:number;
   defense:number;
-  energy?:EnergyType;
+  energy?:Energy;
   // métodos
   attack(enemy:Fighter):void
   special?(enemy:Fighter):void
